@@ -198,7 +198,7 @@ This and other settings can be adjusted in the [configuration](#configuration) a
 
 1. Clone the repository and change into it.
    ```shell
-   git clone https://github.com/oraios/serena
+   git clone https://github.com/badger-99/serena
    cd serena
    ```
 2. Optionally create a config file from the template and adjust it according to your preferences.
@@ -221,11 +221,11 @@ This and other settings can be adjusted in the [configuration](#configuration) a
 
 * Windows:
   ```shell
-  uvx --from git+https://github.com/oraios/serena serena-mcp-server.exe
+  uvx --from git+https://github.com/badger-99/serena serena-mcp-server.exe
   ```
 * Other operating systems:
   ```shell
-  uvx --from git+https://github.com/oraios/serena serena-mcp-server
+  uvx --from git+https://github.com/badger-99/serena serena-mcp-server
   ```
 
 ##### Using Docker (Experimental)
@@ -326,7 +326,7 @@ To do so, run one of these commands the project directory or pass the path to th
   ```
 * When using uvx:
   ```shell
-  uvx --from git+https://github.com/oraios/serena index-project
+  uvx --from git+https://github.com/badger-99/serena index-project
   ```
 
 ### Claude Code
@@ -342,7 +342,7 @@ claude mcp add serena -- <serena-mcp-server> --context ide-assistant --project $
 where `<serena-mcp-server>` is your way of [running the Serena MCP server](#running-the-serena-mcp-server).
 For example, when using `uvx`, you would run
 ```shell
-claude mcp add serena -- uvx --from git+https://github.com/oraios/serena serena-mcp-server --context ide-assistant --project $(pwd)
+claude mcp add serena -- uvx --from git+https://github.com/badger-99/serena serena-mcp-server --context ide-assistant --project $(pwd)
 ```
 
 ℹ️ Once in Claude Code, you should ask Claude to "Read the initial instructions" as your first prompt, such that it will receive information
@@ -372,7 +372,7 @@ Add the `serena` MCP server configuration, using a [run command](#running-the-se
        "mcpServers": {
            "serena": {
                "command": "/abs/path/to/uvx",
-               "args": ["--from", "git+https://github.com/oraios/serena", "serena-mcp-server"]
+               "args": ["--from", "git+https://github.com/badger-99/serena", "serena-mcp-server"]
            }
        }
   }
