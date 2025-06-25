@@ -64,3 +64,12 @@ excluded_tools: []
 initial_prompt: ""
 
 project_name: "serena"
+
+default_provider: fireworks/deepseek-r1   # pick any model you like
+
+providers:
+  fireworks:
+    # Serena treats Fireworks as an OpenAI-style backend
+    base_url: https://api.fireworks.ai/inference/v1/chat/completions
+    api_key: process.env.FIREWORKS_API_KEY
+    model: accounts/fireworks/models/deepseek-r1 
